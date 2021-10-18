@@ -90,6 +90,12 @@ const typeDefs = gql`
     published: Int!
     author: String!
     id: ID!
+    genres: [String!]!
+  }
+
+  type Genre {
+    id: ID!
+    name: String!
   }
 
   type Query {
